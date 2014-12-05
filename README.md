@@ -9,8 +9,7 @@ gem install docomoru
 ```
 
 ## Library
-Currenty docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3)
-(You need DoCoMo API Key).
+Currenty Docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3).
 
 ```rb
 client = Docomoru::Client.new(api_key: ENV["DOCOMO_API_KEY"])
