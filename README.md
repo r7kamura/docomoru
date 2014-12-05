@@ -43,9 +43,9 @@ $ docomoru <method> <arguments> [options]
               |          |                  --header
               |          |                  --no-body
               |          |
-              |          `------------------------------ required arguments for the method
+              |          `------------- required arguments for the method
               |
-              `----------------------------------------- method name
+              `------------------------ method name
 
 $ docomoru create_dialogue かわいい
 ```
