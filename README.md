@@ -47,7 +47,7 @@ $ docomoru <method> <arguments> [options]
               |
               `----------------------------------------- method name
 
-$ docomoru create_dialogue Gemになってみた感想はどうですか
+$ docomoru create_dialogue かわいい
 ```
 
 ![](images/cli.png)
