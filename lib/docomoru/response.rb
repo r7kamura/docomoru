@@ -1,4 +1,5 @@
 require "active_support/core_ext/string/inflections"
+require "rack/utils"
 
 module Docomoru
   class Response
@@ -20,6 +21,10 @@ module Docomoru
 
     def status
       @raw_status
+    end
+
+    def status_message
+      Rack::Utils::HTTP_STATUS_CODES[status]
     end
   end
 end

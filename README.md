@@ -1,8 +1,16 @@
 # Docomoru
 Client library for DoCoMo API written in Ruby.
 
-## Usage
-Currenty docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3).
+## Install
+Note: requires Ruby 2.0.0 or higher.
+
+```sh
+gem install docomoru
+```
+
+## Library
+Currenty docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3)
+(You need DoCoMo API Key).
 
 ```rb
 client = Docomoru::Client.new(api_key: ENV["DOCOMO_API_KEY"])
@@ -23,3 +31,23 @@ response.body #=> {
   "context" => "dXIgT9u1_XKfO1QbaVkAGQ"
 }
 ```
+
+## CLI
+`docomoru` executable is bundled to call use Docomoru from CLI.
+
+```
+$ docomoru <method> <arguments> [options]
+              |          |          |
+              |          |          `-- -a, --api-key (or use DOCOMO_API_KEY env)
+              |          |              -h, --help
+              |          |                  --header
+              |          |                  --no-body
+              |          |
+              |          `------------------------------ required arguments for the method
+              |
+              `----------------------------------------- method name
+
+$ docomoru create_dialogue Gemになってみた感想はどうですか
+```
+
+![](images/cli.png)
