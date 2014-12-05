@@ -1,5 +1,6 @@
 require "docomoru/dialogue_methods"
 require "docomoru/response"
+require "docomoru/version"
 require "active_support/core_ext/object/to_query"
 require "faraday"
 require "faraday_middleware"
