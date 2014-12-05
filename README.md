@@ -1,5 +1,5 @@
 # Docomoru
-Client library for DoCoMo API written in Ruby.
+Client library for docomo API written in Ruby.
 
 ## Install
 Note: requires Ruby 2.0.0 or higher.

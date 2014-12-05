@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Docomoru::VERSION
   spec.authors       = ["Ryo Nakamura"]
   spec.email         = ["r7kamura@gmail.com"]
-  spec.summary       = "Client library for DoCoMo API written in Ruby."
+  spec.summary       = "Client library for docomo API written in Ruby."
   spec.homepage      = "https://github.com/r7kamura/docomoru"
   spec.license       = "MIT"
 
