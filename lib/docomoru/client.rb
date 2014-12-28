@@ -1,4 +1,5 @@
 require "docomoru/dialogue_methods"
+require "docomoru/knowledge_methods"
 require "docomoru/response"
 require "docomoru/version"
 require "active_support/core_ext/object/to_query"
@@ -17,10 +18,15 @@ module Docomoru
     }
 
     include DialogueMethods
+    include KnowledgeMethods
 
     # @param [String] api_key APIKEY issued from DoCoMo.
     def initialize(api_key: nil)
       @api_key = api_key
+    end
+
+    def get(path, params = nil, headers = nil)
+      process(:get, path, params, headers)
     end
 
     def post(path, params = nil, headers = nil)
