@@ -1,3 +1,6 @@
+## 0.1.1
+- Support Knowledge Q&A API (Thx @kkosuge)
+
 ## 0.1.0
 - Add `docomoru` executable for CLI use
 
