@@ -9,7 +9,7 @@ gem install docomoru
 ```
 
 ## Library
-Currenty Docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3).
+Currenty Docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3) & [Knowledge Q&A API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6).
 
 ```rb
 client = Docomoru::Client.new(api_key: ENV["DOCOMO_API_KEY"])
@@ -47,6 +47,7 @@ $ docomoru <method> <arguments> [options]
               `------------------------ method name
 
 $ docomoru create_dialogue かわいい
+$ docomoru create_knowledge Rubyの作者は誰ですか
 ```
 
 ![](images/cli.png)
