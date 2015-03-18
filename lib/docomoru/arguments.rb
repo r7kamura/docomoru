@@ -24,7 +24,7 @@ module Docomoru
     end
 
     def method_name
-      ARGV[0]
+      @argv[0]
     end
 
     def params
