@@ -1,3 +1,6 @@
+## 0.1.2
+- Support slop version 4
+
 ## 0.1.1
 - Support Knowledge Q&A API (Thx @kkosuge)
 
