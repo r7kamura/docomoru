@@ -1,4 +1,4 @@
-# Docomoru [![Build Status](https://travis-ci.org/r7kamura/docomoru.svg)](https://travis-ci.org/r7kamura/docomoru) [![Code Climate](https://codeclimate.com/github/r7kamura/docomoru/badges/gpa.svg)](https://codeclimate.com/github/r7kamura/docomoru)
+# Docomoru [![Build Status](https://travis-ci.org/r7kamura/docomoru.svg)](https://travis-ci.org/r7kamura/docomoru) [![Code Climate](https://codeclimate.com/github/r7kamura/docomoru/badges/gpa.svg)](https://codeclimate.com/github/r7kamura/docomoru) [![Test Coverage](https://codeclimate.com/github/r7kamura/docomoru/badges/coverage.svg)](https://codeclimate.com/github/r7kamura/docomoru)
 Client library for docomo API written in Ruby.
 
 ## Install
