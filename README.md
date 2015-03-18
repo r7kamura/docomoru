@@ -1,4 +1,4 @@
-# Docomoru
+# Docomoru [![Build Status](https://travis-ci.org/r7kamura/docomoru.svg)](https://travis-ci.org/r7kamura/docomoru)
 Client library for docomo API written in Ruby.
 
 ## Install
