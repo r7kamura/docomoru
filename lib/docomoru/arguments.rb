@@ -119,12 +119,16 @@ module Docomoru
     end
 
     def slop_options
-      @slop_options ||= Slop.parse!(@argv) do
-        banner "Usage: docomoru <method> [arguments] [headers|params] [options]"
-        on "a", "api-key=", "Pass API Key or use DOCOMO_API_KEY instead"
-        on "h", "help", "Display help message"
-        on "header", "Show response header"
-        on "no-body", "Hide response body"
+      @slop_options ||= Slop.parse(@argv, suppress_errors: true) do |options|
+        options.banner = "Usage: docomoru <method> [arguments] [headers|params] [options]"
+        if Slop::VERSION >= "4.0.0"
+          options.string("-a", "--api-key", "Pass API Key or use DOCOMO_API_KEY instead")
+        else
+          options.on("-a", "--api-key=", "Pass API Key or use DOCOMO_API_KEY instead")
+        end
+        options.on("-h", "--help", "Display help message")
+        options.on("--header", "Show response header")
+        options.on("--no-body", "Hide response body")
       end
     end
   end
