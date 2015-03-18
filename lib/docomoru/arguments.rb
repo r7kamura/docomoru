@@ -24,7 +24,7 @@ module Docomoru
     end
 
     def method_name
-      @argv[0]
+      slop_options.arguments[0]
     end
 
     def params
@@ -70,7 +70,7 @@ module Docomoru
     end
 
     def has_valid_arguments?
-      -(Client.instance_method(method_name).arity) - 1 == arguments.length
+      -(Client.instance_method(method_name).arity) == arguments.length
     end
 
     def has_valid_method_name?
@@ -98,7 +98,7 @@ module Docomoru
         params = {}
         headers = {}
         arguments = []
-        ARGV[1..-1].each do |section|
+        slop_options.arguments[1..-1].each do |section|
           case
           when /(?<key>.+):(?<value>[^=]+)/ =~ section
             headers[key] = value
