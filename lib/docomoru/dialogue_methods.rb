@@ -2,10 +2,10 @@ module Docomoru
   module DialogueMethods
     PATH = "/dialogue/v1/dialogue"
 
-    def create_dialogue(utt, params = {}, headers = {})
+    def create_dialogue(message, params = {}, headers = {})
       post(
         "#{PATH}?#{default_query_string}",
-        params.merge(utt: utt),
+        params.merge(utt: message),
         headers,
       )
     end
