@@ -1,3 +1,6 @@
 language: ruby
 rvm:
 - 2.0.0
+env:
+  global:
+    secure: MqBEEAkWJkzm/hrmI+BTH1cL00jiswMWOl3QAiRfyGwG+Qj3cogYUz1jEKW7olhgAFTXc8SIooSjfp53yXWRlN1bXkkfPPNoyiyeFa7n62wCgaaQ435NpXBuf3YJwZTkbcCGYogOLSdOkuTtYJJ5IBp0naMm/CGHttvP8H6gj8A=
