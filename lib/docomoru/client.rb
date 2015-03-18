@@ -20,7 +20,7 @@ module Docomoru
     include DialogueMethods
     include KnowledgeMethods
 
-    # @param [String] api_key APIKEY issued from DoCoMo.
+    # @param [String] api_key API Key issued from docomo.
     def initialize(api_key: nil)
       @api_key = api_key
     end
