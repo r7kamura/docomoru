@@ -9,7 +9,7 @@ gem install docomoru
 ```
 
 ## Library
-Currenty Docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3) & [Knowledge Q&A API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6).
+docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3) & [Knowledge Q&A API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6).
 
 ```rb
 client = Docomoru::Client.new(api_key: ENV["DOCOMO_API_KEY"])
@@ -32,7 +32,7 @@ response.body #=> {
 ```
 
 ## CLI
-`docomoru` executable is bundled to call use Docomoru from CLI.
+`docomoru` executable is bundled to call docomo API from CLI.
 
 ```
 $ docomoru <method> <arguments> [options]
