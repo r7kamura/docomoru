@@ -2,14 +2,35 @@
 Client library for docomo API written in Ruby.
 
 ## Install
-Note: requires Ruby 2.0.0 or higher.
+docomoru is provided from [rubygems.org](https://rubygems.org/gems/docomoru) as a gem,
+so you can install it from `gem install docomoru`.
 
 ```sh
 gem install docomoru
 ```
 
-## Library
-docomoru is supporting [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3) & [Knowledge Q&A API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6).
+## Authentication
+To use docomo API, you need to do the following steps.
+
+1. Sign-in to https://dev.smt.docomo.ne.jp/
+2. Register new application
+3. Generate API Key
+
+## Supported APIs
+Currently docomoru is supporting the following APIs.
+
+- [Dialogue API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=3)
+- [Knowledge Q&A API](https://dev.smt.docomo.ne.jp/?p=docs.api.page&api_docs_id=6).
+
+## Usage
+### Library
+Create an instance of `Docomoru::Client`,
+then call a method to send an HTTP request to docomo API.
+Each method returns response object that has status code, headers, and body values.
+
+Here is an example to use Dialogue API via docomoru.
+As you can see, `Docomoru::Client` provides low-level interface like HTTP,
+so you may need some wrapper class to use it from your application.
 
 ```rb
 client = Docomoru::Client.new(api_key: ENV["DOCOMO_API_KEY"])
@@ -33,6 +54,8 @@ response.body #=> {
 
 ## CLI
 `docomoru` executable is bundled to call docomo API from CLI.
+This executable handily creates an instance of `Docomoru::Client` with given API Key,
+then call the specified method, and returns its response.
 
 ```
 $ docomoru <method> <arguments> [options]
