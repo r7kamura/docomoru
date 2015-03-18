@@ -5,7 +5,6 @@ require "docomoru/version"
 require "active_support/core_ext/object/to_query"
 require "faraday"
 require "faraday_middleware"
-require "uri"
 
 module Docomoru
   class Client
@@ -55,7 +54,7 @@ module Docomoru
       Response.new(
         connection.send(
           request_method,
-          URI.escape(path),
+          path,
           params,
           headers,
         )
