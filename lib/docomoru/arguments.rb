@@ -70,7 +70,7 @@ module Docomoru
     end
 
     def has_valid_arguments?
-      -(Client.instance_method(method_name).arity) == arguments.length
+      -(Client.instance_method(method_name).arity) - 1 == arguments.length
     end
 
     def has_valid_method_name?
