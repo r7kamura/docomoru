@@ -1,3 +1,6 @@
+## 0.1.3
+- Fix CLI bug
+
 ## 0.1.2
 - Support slop version 4
 
