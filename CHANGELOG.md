@@ -1,3 +1,6 @@
+## 0.1.4
+- Fix URI escape bug on #create_knowledge (Thx @corselia)
+
 ## 0.1.3
 - Fix CLI bug
 
