@@ -4,7 +4,7 @@ module Docomoru
 
     def create_knowledge(message, params = {}, headers = {})
       get(
-        "#{PATH}?#{default_query_string}&q=#{message}",
+        "#{PATH}?#{default_query_string}&q=#{CGI.escape(message)}",
         params,
         headers,
       )
