@@ -1,6 +1,8 @@
 # Docomoru [![Build Status](https://travis-ci.org/r7kamura/docomoru.svg)](https://travis-ci.org/r7kamura/docomoru) [![Code Climate](https://codeclimate.com/github/r7kamura/docomoru/badges/gpa.svg)](https://codeclimate.com/github/r7kamura/docomoru) [![Test Coverage](https://codeclimate.com/github/r7kamura/docomoru/badges/coverage.svg)](https://codeclimate.com/github/r7kamura/docomoru)
 Client library for docomo API written in Ruby.
 
+# CAUTION: Ruboty::Talk does not work now. See [r7kamura/docomoru#3](https://github.com/r7kamura/docomoru/issues/3)
+
 ## Install
 docomoru can be installed from [rubygems.org](https://rubygems.org/gems/docomoru) as a gem.
 
